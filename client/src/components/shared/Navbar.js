@@ -4,9 +4,9 @@ const Navbar = () => {
   return (
     <Menu>
       <Link to="/"><Menu.Item>Homepage</Menu.Item></Link>
-      <Link to="/handymans"><Menu.Items>Handydandymen</Menu.Items></Link>
-      <Link to="/services"><Menu.Items>Our Services</Menu.Items></Link>
-      <Link to="/comments"><Menu.Items>Comments</Menu.Items></Link>
+      <Link to="/handymans"><Menu.Item>Handydandymen</Menu.Item></Link>
+      <Link to="/services"><Menu.Item>Our Services</Menu.Item></Link>
+      <Link to="/comments"><Menu.Item>Comments</Menu.Item></Link>
     </Menu>
   )
 }
