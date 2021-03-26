@@ -5,7 +5,7 @@ const Navbar = () => {
     <Menu>
       <Link to="/"><Menu.Item>Homepage</Menu.Item></Link>
       <Link to="/handymans"><Menu.Items>Handydandymen</Menu.Items></Link>
-      <Link to="/services"><Menut.Items>Our Services</Menut.Items></Link>
+      <Link to="/services"><Menu.Items>Our Services</Menu.Items></Link>
       <Link to="/comments"><Menu.Items>Comments</Menu.Items></Link>
     </Menu>
   )
