@@ -33,7 +33,7 @@ class Api::HandyMansController < ApplicationController
 
   
   private
-  def handy_man-params
+  def handy_man_params
     params.require(:handy_man).permit(:name, :title, :experience)
   end
 end
