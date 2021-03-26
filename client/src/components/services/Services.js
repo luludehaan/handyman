@@ -1,5 +1,5 @@
 import { Image, Item, Button, Segment, PaginationItem } from 'semantic-ui-react';
-import ServiceSes from '../styledComponents/ServiceStyles';
+import ServiceSes, { MyButton } from '../styledComponents/ServiceStyles';
 import Images from '../images/Elect.jpg';
 export const styles = {
   titleHeader: {
@@ -26,13 +26,13 @@ export const styles = {
   eachService: {
     background: "dimgrey",
   },
-  eachButton: {
-    color: "green",
-    height: "30px",
-    fontSize: "20px",
-    borderRadius: "50px",
-    marginLeft: "60%"
-  },
+  // eachButton: {
+  //   color: "green",
+  //   height: "30px",
+  //   fontSize: "20px",
+  //   borderRadius: "50px",
+  //   marginLeft: "60%"
+  // },
   eachDesc: {
     color: "blue",
     fontSize: "1.1em"
@@ -47,7 +47,7 @@ const Services = () => {
       <Item>
         <Item.Image size='medium' src='https://images.unsplash.com/photo-1541604193435-22287d32c2c2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80' />
         <Item.Content style={ styles.eachService }>
-      <Item.Header as='a' style={ styles.eachHeader }>Home Remodeler<button style={ styles.eachButton }>View</button></Item.Header>
+      <Item.Header as='a' style={ styles.eachHeader }>Home Remodeler<MyButton>View</MyButton></Item.Header>
       <Item.Meta style={ styles.eachDesc }>Description</Item.Meta>
       <Item.Description style={ styles.p }>Remodelers perform remodel work of all types on commercial 
         and residential property, including painting, installing plumbing fixtures, 

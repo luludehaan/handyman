@@ -13,5 +13,9 @@ export const HomeSubTitle = styled.h2`
 export const MyButton = styled(Button)`
   border-radius: 20px !important;
   color: red !important;
+  &:hover {
+    background: green !important;
+  }
+
 `
 export default ServiceSes;
