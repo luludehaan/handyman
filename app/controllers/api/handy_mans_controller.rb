@@ -7,6 +7,7 @@ class Api::HandyMansController < ApplicationController
     @handy_man = Handy_man.find(params[:id])
     render json: @handy_man
   end
+
   def create
     @handy_man = Handy_man.new(handy_man_params)
     if @handy_man.save
@@ -16,7 +17,7 @@ class Api::HandyMansController < ApplicationController
     end
   end
 
-  def update 
+  def update
     @handy_man = Handy_man.find(params[:id])
     if @handy_man.update(handy_man_params)
       render json: @handy_man
@@ -30,10 +31,9 @@ class Api::HandyMansController < ApplicationController
     @handy_man.destroy
     render json: {message: 'handy_man deleted'}
   end
-
-  
+    
   private
-  def handy_man-params
+  def handy_man_params
     params.require(:handy_man).permit(:name, :title, :experience)
   end
 end
