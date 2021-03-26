@@ -30,9 +30,11 @@ class Api::HandyMansController < ApplicationController
     @handy_man.destroy
     render json: {message: 'handy_man deleted'}
   end
-
   
-
+  private
+  def handy_man-params
+    params.require(:handy_man).permit(:name, :title, :experience)
+  end
 
 
 
