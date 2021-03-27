@@ -1,16 +1,10 @@
 class Api::CommentsController < ApplicationController
   before_action :set_service
-<<<<<<< HEAD
 
   def index
     render json: @service.comments
   end
 
-=======
-  def index
-    render json: @service.comments
-  end
->>>>>>> c083ea3da582e92ba609c76dd904d8a2440025bf
   def create
     @comment = @service.comments.new(comment_params)
     if @comment.save
@@ -20,9 +14,12 @@ class Api::CommentsController < ApplicationController
     end
   end
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> c083ea3da582e92ba609c76dd904d8a2440025bf
+=======
+>>>>>>> fix conflicts
   def update
     @comment = @service.comments.find(params[:id])
     if @comment.update(comment_params)
@@ -32,17 +29,23 @@ class Api::CommentsController < ApplicationController
     end
   end
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> c083ea3da582e92ba609c76dd904d8a2440025bf
+=======
+>>>>>>> fix conflicts
   def destroy
     @service.comments.find(params[:id]).destroy
     render json: { message: 'comment is deleted' }
   end
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> c083ea3da582e92ba609c76dd904d8a2440025bf
+=======
+>>>>>>> fix conflicts
   private
     def comment_params
       params.require(:comment).permit(:name, :price)

@@ -1,16 +1,10 @@
 class Api::ServicesController < ApplicationController
   before_action :set_handy_man
-<<<<<<< HEAD
 
   def index
     render json: @handy_man.services
   end
 
-=======
-  def index
-    render json: @handy_man.services
-  end
->>>>>>> c083ea3da582e92ba609c76dd904d8a2440025bf
   def create
     @service = @handy_man.services.new(service_params)
     if @service.save
@@ -20,9 +14,12 @@ class Api::ServicesController < ApplicationController
     end
   end
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> c083ea3da582e92ba609c76dd904d8a2440025bf
+=======
+>>>>>>> fix conflicts
   def update
     @service = @handy_man.services.find(params[:id])
     if @service.update(service_params)
@@ -32,17 +29,23 @@ class Api::ServicesController < ApplicationController
     end
   end
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> c083ea3da582e92ba609c76dd904d8a2440025bf
+=======
+>>>>>>> fix conflicts
   def destroy
     @handy_man.services.find(params[:id]).destroy
     render json: { message: 'service deleted' }
   end
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> c083ea3da582e92ba609c76dd904d8a2440025bf
+=======
+>>>>>>> fix conflicts
   private
     def service_params
       params.require(:service).permit(:title)
