@@ -40,6 +40,19 @@ export const styles = {
 }
 
 const Services = () => {
+
+// addService = () => {
+// axios.post('api/services', {service})
+//   .then( res => {
+//     const { services } = 
+//   })
+
+// }
+
+
+
+
+
   return (
     <>
     <Item.Group>
